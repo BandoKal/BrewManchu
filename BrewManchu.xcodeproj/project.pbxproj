@@ -14,6 +14,8 @@
 		0536611322F0826F00FE6C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0536611222F0826F00FE6C22 /* Preview Assets.xcassets */; };
 		0536611622F0826F00FE6C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */; };
 		0536612122F0826F00FE6C22 /* BrewManchuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612022F0826F00FE6C22 /* BrewManchuTests.swift */; };
+		0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612B22F0879100FE6C22 /* ViewModel.swift */; };
+		0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612D22F087EF00FE6C22 /* BreweryLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		0536611C22F0826F00FE6C22 /* BrewManchuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewManchuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0536612022F0826F00FE6C22 /* BrewManchuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewManchuTests.swift; sourceTree = "<group>"; };
 		0536612222F0826F00FE6C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0536612B22F0879100FE6C22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0536612D22F087EF00FE6C22 /* BreweryLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */,
 				0536611722F0826F00FE6C22 /* Info.plist */,
 				0536611122F0826F00FE6C22 /* Preview Content */,
+				0536612B22F0879100FE6C22 /* ViewModel.swift */,
+				0536612D22F087EF00FE6C22 /* BreweryLocation.swift */,
 			);
 			path = BrewManchu;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 			files = (
 				0536610A22F0826B00FE6C22 /* AppDelegate.swift in Sources */,
 				0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */,
+				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
+				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
 				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

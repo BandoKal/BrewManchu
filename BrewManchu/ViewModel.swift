@@ -1,0 +1,23 @@
+//
+//  ViewModel.swift
+//  BrewManchu
+//
+//  Created by JDU9706 on 7/30/19.
+//  Copyright © 2019 bandokal. All rights reserved.
+//
+
+import SwiftUI
+import Combine
+import MapKit
+
+final class ViewModel: ObservableObject {
+    let didChange = PassthroughSubject<ViewModel, Error>()
+    
+    var breweryLocations = [BreweryLocation]()
+    
+    
+    func coordinates(for breweryLocation: BreweryLocation) -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: breweryLocation.latitude, longitude: breweryLocation.longitude)
+        
+    }
+}
