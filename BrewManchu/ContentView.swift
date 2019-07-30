@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel = ViewModel()
     var body: some View {
-        Text("Hello World")
+        viewModel.loadLocations(for: "Nashville")
+        return Text("Hello World")
     }
 }
 
