@@ -16,6 +16,7 @@
 		0536612122F0826F00FE6C22 /* BrewManchuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612022F0826F00FE6C22 /* BrewManchuTests.swift */; };
 		0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612B22F0879100FE6C22 /* ViewModel.swift */; };
 		0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612D22F087EF00FE6C22 /* BreweryLocation.swift */; };
+		0536613022F088E100FE6C22 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612F22F088E100FE6C22 /* DataAccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		0536612222F0826F00FE6C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0536612B22F0879100FE6C22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0536612D22F087EF00FE6C22 /* BreweryLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryLocation.swift; sourceTree = "<group>"; };
+		0536612F22F088E100FE6C22 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				0536611122F0826F00FE6C22 /* Preview Content */,
 				0536612B22F0879100FE6C22 /* ViewModel.swift */,
 				0536612D22F087EF00FE6C22 /* BreweryLocation.swift */,
+				0536612F22F088E100FE6C22 /* DataAccess.swift */,
 			);
 			path = BrewManchu;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0536610A22F0826B00FE6C22 /* AppDelegate.swift in Sources */,
+				0536613022F088E100FE6C22 /* DataAccess.swift in Sources */,
 				0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */,
 				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
 				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
