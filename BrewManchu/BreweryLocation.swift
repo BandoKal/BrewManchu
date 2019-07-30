@@ -37,3 +37,8 @@ struct BreweryLocation: Decodable, Identifiable {
     var latitude: Double
     var longitude: Double
 }
+
+//API returns some top level metadata in JSON response
+struct LocationsResponseData: Decodable {
+    var data: [BreweryLocation]
+}
