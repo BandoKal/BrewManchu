@@ -14,8 +14,9 @@ struct BreweryListView: View {
     var body: some View {
         NavigationView {
             List($viewModel.breweryLocations.value) { location in
-                
-                BreweryRowView(currentLocation: location)
+                NavigationLink(destination: BreweryDetailView(currentBrewery: location)) {
+                 BreweryRowView(currentLocation: location)
+                }
             }.navigationBarTitle(Text("Breweries"), displayMode: .automatic)
         }
         .onAppear {
@@ -27,7 +28,6 @@ struct BreweryListView: View {
 #if DEBUG
 struct BreweryListView_Previews: PreviewProvider {
     static var previews: some View {
-        
         BreweryListView()
     }
 }
