@@ -23,6 +23,19 @@ struct Brewery: Decodable {
     var images: BreweryImages
 }
 
+enum BreweryLocationType: String {
+    case micro
+    case macro
+    case nano
+    case prewpub
+    case production
+    case office
+    case tasting
+    case restaurant
+    case cidery
+    case meadery
+}
+
 struct BreweryLocation: Decodable, Identifiable {
     
     var id: String
@@ -33,10 +46,12 @@ struct BreweryLocation: Decodable, Identifiable {
     var locationTypeDisplay: String
     var openToPublic: String
     var hoursOfOperation: String
+    var locationType: String
     var brewery: Brewery
     
     var latitude: Double
     var longitude: Double
+    
 }
 
 //API returns some top level metadata in JSON response
