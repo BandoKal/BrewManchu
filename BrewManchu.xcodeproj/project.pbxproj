@@ -22,6 +22,7 @@
 		0536613922F1C0B900FE6C22 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613822F1C0B900FE6C22 /* CircleImageView.swift */; };
 		0536613B22F1CEB700FE6C22 /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */; };
 		0536613D22F1F67200FE6C22 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613C22F1F67200FE6C22 /* MapView.swift */; };
+		0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613F22F2074900FE6C22 /* CTAButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0536613822F1C0B900FE6C22 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
 		0536613C22F1F67200FE6C22 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0536613F22F2074900FE6C22 /* CTAButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				0536613822F1C0B900FE6C22 /* CircleImageView.swift */,
 				0536613C22F1F67200FE6C22 /* MapView.swift */,
+				0536613F22F2074900FE6C22 /* CTAButtonView.swift */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
 				0536613422F1B31E00FE6C22 /* BreweryRowView.swift in Sources */,
 				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
+				0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */,
 				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
 				0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */,
 			);
