@@ -7,14 +7,18 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct BreweryDetailView: View {
     var currentBrewery: BreweryLocation
     
     var body: some View {
         return VStack {
-            
-            CircleImage(imageName: "default-image", imageSize: .large)
+            MapView(coordinate:  CLLocationCoordinate2D(latitude: currentBrewery.latitude,
+                                                        longitude: currentBrewery.longitude))
+                           .edgesIgnoringSafeArea(.top)
+                           .frame(height:300)
+            CircleImageView(imageName: "default-image", imageSize: .large)
                 .offset(y: -110)
                 .padding(.bottom, -130)
             
