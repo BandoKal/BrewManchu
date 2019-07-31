@@ -22,9 +22,9 @@ struct BreweryRowView : View {
             VStack {
                 Text("0.0")
                 Text("Mi")
-            }
+            }.padding()
         }
-    .padding()
+    
     }
 }
 
