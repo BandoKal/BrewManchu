@@ -32,6 +32,7 @@ struct BreweryLocation: Decodable, Identifiable {
     var region: String
     var locationTypeDisplay: String
     var openToPublic: String
+    var hoursOfOperation: String
     var brewery: Brewery
     
     var latitude: Double
