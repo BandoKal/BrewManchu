@@ -18,6 +18,9 @@
 		0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612D22F087EF00FE6C22 /* BreweryLocation.swift */; };
 		0536613022F088E100FE6C22 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612F22F088E100FE6C22 /* DataAccess.swift */; };
 		0536613422F1B31E00FE6C22 /* BreweryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613322F1B31E00FE6C22 /* BreweryRowView.swift */; };
+		0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613522F1B93900FE6C22 /* BreweryListView.swift */; };
+		0536613922F1C0B900FE6C22 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613822F1C0B900FE6C22 /* CircleImageView.swift */; };
+		0536613B22F1CEB700FE6C22 /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		0536612D22F087EF00FE6C22 /* BreweryLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryLocation.swift; sourceTree = "<group>"; };
 		0536612F22F088E100FE6C22 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		0536613322F1B31E00FE6C22 /* BreweryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryRowView.swift; sourceTree = "<group>"; };
+		0536613522F1B93900FE6C22 /* BreweryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListView.swift; sourceTree = "<group>"; };
+		0536613822F1C0B900FE6C22 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +103,7 @@
 				0536612B22F0879100FE6C22 /* ViewModel.swift */,
 				0536612D22F087EF00FE6C22 /* BreweryLocation.swift */,
 				0536612F22F088E100FE6C22 /* DataAccess.swift */,
-				0536613322F1B31E00FE6C22 /* BreweryRowView.swift */,
+				0536613722F1B93F00FE6C22 /* Views */,
 			);
 			path = BrewManchu;
 			sourceTree = "<group>";
@@ -117,6 +123,17 @@
 				0536612222F0826F00FE6C22 /* Info.plist */,
 			);
 			path = BrewManchuTests;
+			sourceTree = "<group>";
+		};
+		0536613722F1B93F00FE6C22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0536613522F1B93900FE6C22 /* BreweryListView.swift */,
+				0536613322F1B31E00FE6C22 /* BreweryRowView.swift */,
+				0536613822F1C0B900FE6C22 /* CircleImageView.swift */,
+				0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0536613B22F1CEB700FE6C22 /* BreweryDetailView.swift in Sources */,
 				0536610A22F0826B00FE6C22 /* AppDelegate.swift in Sources */,
+				0536613922F1C0B900FE6C22 /* CircleImageView.swift in Sources */,
 				0536613022F088E100FE6C22 /* DataAccess.swift in Sources */,
 				0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */,
 				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
 				0536613422F1B31E00FE6C22 /* BreweryRowView.swift in Sources */,
 				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
 				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
+				0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
