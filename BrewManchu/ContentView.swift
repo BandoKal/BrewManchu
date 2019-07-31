@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var viewModel = ViewModel()
+    @ObservedObject var viewModel: ViewModel = ViewModel()
+    
     var body: some View {
-        viewModel.loadLocations(for: "Nashville")
-        return Text("Hello World")
+        return Text($viewModel.breweryLocations.first?.wrappedValue.brewery.name ?? "Heya")
+            .onAppear {
+                self.viewModel.loadLocations(for: "Nashville")
+        }
     }
 }
 
