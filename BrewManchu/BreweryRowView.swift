@@ -13,7 +13,7 @@ struct BreweryRowView : View {
     var body: some View {
         HStack {
             //TODO: Create seperate "ImageModel" for loading of this image
-            CircleImage(imageName: "default-beer", imageSize: .icon)
+            CircleImageView(imageName: "default-beer", imageSize: .icon)
                 .padding()
             VStack(alignment: .leading) {
             Text(currentLocation.brewery.nameShortDisplay)

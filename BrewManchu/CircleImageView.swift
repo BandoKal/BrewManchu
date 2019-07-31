@@ -14,7 +14,7 @@ enum ImageSize: CGFloat {
     case large = 300
 }
 
-struct CircleImage : View {
+struct CircleImageView : View {
     var imageName: String
     var imageSize: ImageSize
     
@@ -31,9 +31,9 @@ struct CircleImage : View {
 }
 
 #if DEBUG
-struct CircleImage_Previews : PreviewProvider {
+struct CircleImageView_Previews : PreviewProvider {
     static var previews: some View {
-        CircleImage(imageName: "default-beer", imageSize: .icon)
+        CircleImageView(imageName: "default-beer", imageSize: .icon)
     }
 }
 #endif

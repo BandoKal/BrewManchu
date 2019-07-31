@@ -130,13 +130,21 @@
 		0536613722F1B93F00FE6C22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0536613E22F1F7AB00FE6C22 /* Supporting */,
 				0536613522F1B93900FE6C22 /* BreweryListView.swift */,
 				0536613322F1B31E00FE6C22 /* BreweryRowView.swift */,
-				0536613822F1C0B900FE6C22 /* CircleImageView.swift */,
 				0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */,
-				0536613C22F1F67200FE6C22 /* MapView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		0536613E22F1F7AB00FE6C22 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0536613822F1C0B900FE6C22 /* CircleImageView.swift */,
+				0536613C22F1F67200FE6C22 /* MapView.swift */,
+			);
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
