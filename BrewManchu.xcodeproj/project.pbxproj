@@ -21,6 +21,7 @@
 		0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613522F1B93900FE6C22 /* BreweryListView.swift */; };
 		0536613922F1C0B900FE6C22 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613822F1C0B900FE6C22 /* CircleImageView.swift */; };
 		0536613B22F1CEB700FE6C22 /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */; };
+		0536613D22F1F67200FE6C22 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613C22F1F67200FE6C22 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		0536613522F1B93900FE6C22 /* BreweryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListView.swift; sourceTree = "<group>"; };
 		0536613822F1C0B900FE6C22 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
+		0536613C22F1F67200FE6C22 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				0536613322F1B31E00FE6C22 /* BreweryRowView.swift */,
 				0536613822F1C0B900FE6C22 /* CircleImageView.swift */,
 				0536613A22F1CEB700FE6C22 /* BreweryDetailView.swift */,
+				0536613C22F1F67200FE6C22 /* MapView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				0536613B22F1CEB700FE6C22 /* BreweryDetailView.swift in Sources */,
 				0536610A22F0826B00FE6C22 /* AppDelegate.swift in Sources */,
 				0536613922F1C0B900FE6C22 /* CircleImageView.swift in Sources */,
+				0536613D22F1F67200FE6C22 /* MapView.swift in Sources */,
 				0536613022F088E100FE6C22 /* DataAccess.swift in Sources */,
 				0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */,
 				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
