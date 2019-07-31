@@ -13,12 +13,12 @@ struct BreweryDetailView: View {
     var currentBrewery: BreweryLocation
     
     var body: some View {
-        return VStack {
+        ScrollView{
+            VStack {
             MapView(coordinate:  CLLocationCoordinate2D(latitude: currentBrewery.latitude,
                                                         longitude: currentBrewery.longitude))
-                .edgesIgnoringSafeArea(.top)
-                .frame(maxHeight: 150.0)
-         
+                .frame(height: 300.0)
+            
             CircleImageView(imageName: currentBrewery.brewery.images.large, imageSize: .large)
                 .offset(y: -100)
                 .padding(.bottom, -130)
@@ -28,7 +28,9 @@ struct BreweryDetailView: View {
                     .font(.title)
                 Text(currentBrewery.brewery.description)
                     .font(.caption)
-                Spacer()
+                    .lineLimit(10) //FIXME: Text not wrapping without frame height being set to something crazy, even then not wrapping all the way to line limit.
+                    .frame(idealHeight: 1000)
+                    
                 VStack(alignment: .center, spacing: 12) {
                     CTAButtonView(title: "Directions", iconName: "location") {
                         //TODO: Use user's current coordinates
@@ -43,7 +45,10 @@ struct BreweryDetailView: View {
                 }
             }
             .padding()
+            
+            }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
