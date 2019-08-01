@@ -23,27 +23,6 @@ struct Brewery: Decodable {
     var images: BreweryImages
 }
 
-enum BreweryLocationType: String {
-
-    case all
-    case micro
-    case macro
-    case nano
-    case prewpub
-    case production
-    case office
-    case tasting
-    case restaurant
-    case cidery
-    case meadery
-}
-
-extension BreweryLocationType: Identifiable {
-    var id: ObjectIdentifier {
-        ObjectIdentifier(BreweryLocationType.self)
-    }
-}
-
 struct BreweryLocation: Decodable, Identifiable {
     
     var id: String
