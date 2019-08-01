@@ -24,6 +24,8 @@ struct Brewery: Decodable {
 }
 
 enum BreweryLocationType: String {
+
+    case all
     case micro
     case macro
     case nano

@@ -8,38 +8,35 @@
 
 import SwiftUI
 
-
-struct Segment: UIViewRepresentable {
-    var items: [Any]
-    
-    func makeUIView(context: Context) -> UISegmentedControl {
-        let control = UISegmentedControl(items: items)
-        control.selectedSegmentIndex = 0
-        return control
-    }
-    
-    func updateUIView(_ uiView: UISegmentedControl, context: Context) {}
-    
-}
+let supportedFilters = [BreweryLocationType.all.rawValue,
+                        BreweryLocationType.micro.rawValue,
+                        BreweryLocationType.prewpub.rawValue,
+                        BreweryLocationType.cidery.rawValue,
+                        BreweryLocationType.restaurant.rawValue]
 
 struct BreweryListView: View {
     @ObservedObject var viewModel: ViewModel = ViewModel()
+    @State var filterKey = "all"
     
     var body: some View {
-        
-        NavigationView {
+        return NavigationView {
             VStack {
-            Segment(items: [BreweryLocationType.micro.rawValue.capitalized,
-                                       BreweryLocationType.prewpub.rawValue.capitalized,
-                                       BreweryLocationType.cidery.rawValue.capitalized,
-                BreweryLocationType.restaurant.rawValue.capitalized])
-            List($viewModel.breweryLocations.value) { location in
-                NavigationLink(destination: BreweryDetailView(currentBrewery: location)) {
-                 BreweryRowView(currentLocation: location)
-                }
                 
-            }.navigationBarTitle(Text("Breweries"), displayMode: .automatic)
-            }
+                Picker("Heya", selection: $filterKey) {
+                    ForEach(supportedFilters) {
+                        Text($0.capitalized)
+                    }
+                    }.pickerStyle(SegmentedPickerStyle())
+//                SegmentedView(items: supportedFilters.map { $0.rawValue.capitalized }, $filterKey)
+                List($viewModel.breweryLocations.value) { location in
+                    if self.filterKey == "all" ||  self.filterKey == location.locationType {
+                        NavigationLink(destination: BreweryDetailView(currentBrewery: location)) {
+                            BreweryRowView(currentLocation: location)
+                        }
+                    }
+                    
+                }.navigationBarTitle(Text("Breweries"), displayMode: .automatic)
+            }.padding()
         }
         .onAppear {
             self.viewModel.loadLocations(for: "Nashville")

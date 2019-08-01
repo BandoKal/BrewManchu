@@ -20,6 +20,7 @@ final class ViewModel: ObservableObject {
     
     func loadLocations(for locality: String) {
         let _ = try! breweryLocationsPublisher(for: locality)
+            .assertNoFailure()
             .compactMap{ $0.data }
             .decode(type: LocationsResponseData.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
