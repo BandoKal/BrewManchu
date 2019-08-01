@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-let supportedFilters = [BreweryLocationType.all.rawValue,
-                        BreweryLocationType.micro.rawValue,
-                        BreweryLocationType.prewpub.rawValue,
-                        BreweryLocationType.cidery.rawValue,
-                        BreweryLocationType.restaurant.rawValue]
+let supportedFilters = [BreweryLocationType.all,
+                        BreweryLocationType.micro,
+                        BreweryLocationType.prewpub,
+                        BreweryLocationType.cidery,
+                        BreweryLocationType.restaurant]
 
 struct BreweryListView: View {
     @ObservedObject var viewModel: ViewModel = ViewModel()
@@ -22,12 +22,11 @@ struct BreweryListView: View {
         return NavigationView {
             VStack {
                 
-                Picker("Heya", selection: $filterKey) {
+                Picker("", selection: $filterKey) {
                     ForEach(supportedFilters) {
-                        Text($0.capitalized)
+                        Text($0.rawValue.capitalized)
                     }
-                    }.pickerStyle(SegmentedPickerStyle())
-//                SegmentedView(items: supportedFilters.map { $0.rawValue.capitalized }, $filterKey)
+                }.pickerStyle(SegmentedPickerStyle())
                 List($viewModel.breweryLocations.value) { location in
                     if self.filterKey == "all" ||  self.filterKey == location.locationType {
                         NavigationLink(destination: BreweryDetailView(currentBrewery: location)) {

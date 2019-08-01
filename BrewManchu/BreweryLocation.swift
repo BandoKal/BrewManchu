@@ -38,6 +38,12 @@ enum BreweryLocationType: String {
     case meadery
 }
 
+extension BreweryLocationType: Identifiable {
+    var id: ObjectIdentifier {
+        ObjectIdentifier(BreweryLocationType.self)
+    }
+}
+
 struct BreweryLocation: Decodable, Identifiable {
     
     var id: String
