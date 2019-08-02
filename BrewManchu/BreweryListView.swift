@@ -18,11 +18,14 @@ struct BreweryListView: View {
                     NavigationLink(destination: BreweryDetailView(currentBrewery: location)) {
                         BreweryRowView(currentLocation: location)
                     }
-                    
                 }.navigationBarTitle(Text("Breweries"), displayMode: .automatic)
             }.padding()
         }
         .onAppear {
+            //TODO: Locatin Permission? (In use only)
+            // if no permission prompt for it.
+            // Find locality
+            // input locality in load
             self.viewModel.loadLocations(for: "Nashville")
         }
     }
