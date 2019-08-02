@@ -15,12 +15,12 @@ enum ImageSize: CGFloat {
 }
 
 struct CircleImageView : View {
-    var imageName: String
+    var image: Image
     var imageSize: ImageSize
     
     
     var body: some View {
-        Image(imageName)
+        self.image
             .resizable()
             .frame(width: imageSize.rawValue, height: imageSize.rawValue)
             .aspectRatio(1, contentMode: .fit)
@@ -33,7 +33,7 @@ struct CircleImageView : View {
 #if DEBUG
 struct CircleImageView_Previews : PreviewProvider {
     static var previews: some View {
-        CircleImageView(imageName: "default-beer", imageSize: .icon)
+        CircleImageView(image: Image("default-beer"), imageSize: .icon)
     }
 }
 #endif
