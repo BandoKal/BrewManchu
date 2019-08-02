@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BreweryListView: View {
-    @ObservedObject var viewModel: ViewModel = ViewModel()
+    @ObservedObject var viewModel: ListViewModel = ListViewModel()
     
     var body: some View {
         return NavigationView {

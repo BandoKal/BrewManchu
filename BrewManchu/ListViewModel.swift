@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  ListViewModel.swift
 //  BrewManchu
 //
 //  Created by JDU9706 on 7/30/19.
@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import MapKit
 
-final class ViewModel: ObservableObject {
+final class ListViewModel: ObservableObject {
     
     @Published var breweryLocations = [BreweryLocation]()
     
@@ -24,8 +24,7 @@ final class ViewModel: ObservableObject {
             .compactMap{ $0.data }
             .decode(type: LocationsResponseData.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { error in
-                print(error)
+            .sink(receiveCompletion: { _ in
             }) {
                 self.breweryLocations = $0.data
         }

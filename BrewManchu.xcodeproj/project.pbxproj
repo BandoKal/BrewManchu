@@ -14,7 +14,7 @@
 		0536611322F0826F00FE6C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0536611222F0826F00FE6C22 /* Preview Assets.xcassets */; };
 		0536611622F0826F00FE6C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */; };
 		0536612122F0826F00FE6C22 /* BrewManchuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612022F0826F00FE6C22 /* BrewManchuTests.swift */; };
-		0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612B22F0879100FE6C22 /* ViewModel.swift */; };
+		0536612C22F0879100FE6C22 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612B22F0879100FE6C22 /* ListViewModel.swift */; };
 		0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612D22F087EF00FE6C22 /* BreweryLocation.swift */; };
 		0536613022F088E100FE6C22 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536612F22F088E100FE6C22 /* DataAccess.swift */; };
 		0536613422F1B31E00FE6C22 /* BreweryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613322F1B31E00FE6C22 /* BreweryRowView.swift */; };
@@ -24,6 +24,7 @@
 		0536613D22F1F67200FE6C22 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613C22F1F67200FE6C22 /* MapView.swift */; };
 		0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613F22F2074900FE6C22 /* CTAButtonView.swift */; };
 		0536614222F34D6900FE6C22 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536614122F34D6900FE6C22 /* ImageStore.swift */; };
+		0536614422F34FD100FE6C22 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536614322F34FD100FE6C22 /* RowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 		0536611C22F0826F00FE6C22 /* BrewManchuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewManchuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0536612022F0826F00FE6C22 /* BrewManchuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewManchuTests.swift; sourceTree = "<group>"; };
 		0536612222F0826F00FE6C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0536612B22F0879100FE6C22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0536612B22F0879100FE6C22 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		0536612D22F087EF00FE6C22 /* BreweryLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryLocation.swift; sourceTree = "<group>"; };
 		0536612F22F088E100FE6C22 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		0536613322F1B31E00FE6C22 /* BreweryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryRowView.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		0536613C22F1F67200FE6C22 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0536613F22F2074900FE6C22 /* CTAButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButtonView.swift; sourceTree = "<group>"; };
 		0536614122F34D6900FE6C22 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		0536614322F34FD100FE6C22 /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +108,10 @@
 				0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */,
 				0536611722F0826F00FE6C22 /* Info.plist */,
 				0536611122F0826F00FE6C22 /* Preview Content */,
-				0536612B22F0879100FE6C22 /* ViewModel.swift */,
-				0536612D22F087EF00FE6C22 /* BreweryLocation.swift */,
 				0536612F22F088E100FE6C22 /* DataAccess.swift */,
+				0536614622F3D57D00FE6C22 /* Models */,
 				0536613722F1B93F00FE6C22 /* Views */,
+				0536614522F3D53E00FE6C22 /* ViewModels */,
 				0536614122F34D6900FE6C22 /* ImageStore.swift */,
 			);
 			path = BrewManchu;
@@ -151,6 +153,23 @@
 				0536613F22F2074900FE6C22 /* CTAButtonView.swift */,
 			);
 			name = Supporting;
+			sourceTree = "<group>";
+		};
+		0536614522F3D53E00FE6C22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0536612B22F0879100FE6C22 /* ListViewModel.swift */,
+				0536614322F34FD100FE6C22 /* RowViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		0536614622F3D57D00FE6C22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0536612D22F087EF00FE6C22 /* BreweryLocation.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,13 +279,14 @@
 				0536613D22F1F67200FE6C22 /* MapView.swift in Sources */,
 				0536613022F088E100FE6C22 /* DataAccess.swift in Sources */,
 				0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */,
-				0536612C22F0879100FE6C22 /* ViewModel.swift in Sources */,
+				0536612C22F0879100FE6C22 /* ListViewModel.swift in Sources */,
 				0536613422F1B31E00FE6C22 /* BreweryRowView.swift in Sources */,
 				0536614222F34D6900FE6C22 /* ImageStore.swift in Sources */,
 				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
 				0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */,
 				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
 				0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */,
+				0536614422F34FD100FE6C22 /* RowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

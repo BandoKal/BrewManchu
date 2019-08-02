@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: ViewModel = ViewModel()
+    @ObservedObject var viewModel: ListViewModel = ListViewModel()
     
     var body: some View {
         return Text($viewModel.breweryLocations.first?.wrappedValue.brewery.name ?? "Heya")
