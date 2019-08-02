@@ -23,7 +23,7 @@ struct BreweryDetailView: View {
                                                         longitude: currentBrewery.longitude))
                 .frame(height: 300.0)
             
-            CircleImageView(imageName: currentBrewery.brewery.images.large, imageSize: .large)
+            CircleImageView(image: Image(currentBrewery.brewery.images.large) , imageSize: .large)
                 .offset(y: -100)
                 .padding(.bottom, -130)
             
