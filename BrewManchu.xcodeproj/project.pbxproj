@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0536610A22F0826B00FE6C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536610922F0826B00FE6C22 /* AppDelegate.swift */; };
 		0536610C22F0826B00FE6C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536610B22F0826B00FE6C22 /* SceneDelegate.swift */; };
-		0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536610D22F0826C00FE6C22 /* ContentView.swift */; };
 		0536611022F0826F00FE6C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0536610F22F0826F00FE6C22 /* Assets.xcassets */; };
 		0536611322F0826F00FE6C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0536611222F0826F00FE6C22 /* Preview Assets.xcassets */; };
 		0536611622F0826F00FE6C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */; };
@@ -43,7 +42,6 @@
 		0536610622F0826B00FE6C22 /* BrewManchu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewManchu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0536610922F0826B00FE6C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0536610B22F0826B00FE6C22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0536610D22F0826C00FE6C22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0536610F22F0826F00FE6C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0536611222F0826F00FE6C22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0536611522F0826F00FE6C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				0536610922F0826B00FE6C22 /* AppDelegate.swift */,
 				0536610B22F0826B00FE6C22 /* SceneDelegate.swift */,
-				0536610D22F0826C00FE6C22 /* ContentView.swift */,
 				0536610F22F0826F00FE6C22 /* Assets.xcassets */,
 				0536611422F0826F00FE6C22 /* LaunchScreen.storyboard */,
 				0536611722F0826F00FE6C22 /* Info.plist */,
@@ -290,7 +287,6 @@
 				0536614222F34D6900FE6C22 /* ImageStore.swift in Sources */,
 				0536612E22F087EF00FE6C22 /* BreweryLocation.swift in Sources */,
 				0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */,
-				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
 				0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */,
 				0536614822F3D8C200FE6C22 /* DetailViewModel.swift in Sources */,
 				0536614422F34FD100FE6C22 /* RowViewModel.swift in Sources */,
