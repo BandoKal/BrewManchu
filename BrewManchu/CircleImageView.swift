@@ -11,7 +11,7 @@ import SwiftUI
 enum ImageSize: CGFloat {
     case icon = 50
     case medium = 100
-    case large = 250
+    case large = 200
 }
 
 struct CircleImageView : View {
@@ -21,12 +21,11 @@ struct CircleImageView : View {
     
     var body: some View {
         self.image
-            .resizable()
             .frame(width: imageSize.rawValue, height: imageSize.rawValue)
-            .aspectRatio(1, contentMode: .fit)
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
+        
     }
 }
 

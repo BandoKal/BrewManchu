@@ -15,6 +15,7 @@ func captionText(_ content: String) -> some View {
 
 struct BreweryDetailView: View {
     var currentBrewery: BreweryLocation
+    @ObservedObject var detailViewModel = DetailViewModel()
     
     var body: some View {
         ScrollView{
@@ -23,7 +24,7 @@ struct BreweryDetailView: View {
                                                         longitude: currentBrewery.longitude))
                 .frame(height: 300.0)
             
-            CircleImageView(image: Image(currentBrewery.brewery.images.large) , imageSize: .large)
+                CircleImageView(image: $detailViewModel.largeImage.wrappedValue , imageSize: .large)
                 .offset(y: -100)
                 .padding(.bottom, -130)
             
@@ -64,6 +65,9 @@ struct BreweryDetailView: View {
             }
         }
         .edgesIgnoringSafeArea(.top)
+        .onAppear {
+            self.detailViewModel.loadImage(from: self.currentBrewery.brewery.images.large)
+        }
     }
 }
 
