@@ -10,8 +10,11 @@ import SwiftUI
 
 struct BreweryRowView : View {
     var currentLocation: BreweryLocation
+    @ObservedObject var rowViewModel = RowViewModel()
+    
     var body: some View {
         HStack {
+            CircleImageView(image: $rowViewModel.image.wrappedValue, imageSize: .icon)
             VStack(alignment: .leading) {
             Text(currentLocation.brewery.nameShortDisplay)
                 .font(.headline)
@@ -23,6 +26,9 @@ struct BreweryRowView : View {
                 Text("0.0")
                 Text("Mi")
             }.padding()
+        }
+        .onAppear {
+            self.rowViewModel.loadImage(from: self.currentLocation.brewery.images.icon)
         }
     
     }
