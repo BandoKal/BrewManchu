@@ -14,7 +14,7 @@ struct BreweryRowView : View {
     
     var body: some View {
         HStack {
-            CircleImageView(image: $rowViewModel.image.wrappedValue, imageSize: .icon)
+            CircleImageView(image: $rowViewModel.iconImage.wrappedValue, imageSize: .icon)
             VStack(alignment: .leading) {
             Text(currentLocation.brewery.nameShortDisplay)
                 .font(.headline)

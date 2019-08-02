@@ -9,18 +9,13 @@
 import Foundation
 import SwiftUI
 
-final class RowViewModel: ObservableObject {
+final class RowViewModel: ObservableObject, ImageModel {
     
-    @Published var image: Image = bundleImage(named: .defaultBeer)
+    @Published var iconImage: Image = bundleImage(named: .defaultBeer)
     
-    func loadImage(from urlString: String) {
-        let _ = try! imagePublisherFromURLString(urlString)
-            .assertNoFailure()
-            .compactMap{ $0.data }
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { _ in
-            }, receiveValue: { data in
-                self.image = Image(uiImage: UIImage(data: data)!)
-            })
+    func processReceiveValue(_ data: Data) {
+        guard let image = UIImage(data: data) else { return }
+        iconImage = Image(uiImage: image)
     }
 }
+

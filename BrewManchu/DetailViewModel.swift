@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+final class DetailViewModel: ObservableObject, ImageModel {
+    
+    @Published var largeImage: Image = bundleImage(named: .defaultBeer)
+    
+    func processReceiveValue(_ data: Data) {
+        guard let image = UIImage(data: data) else { return }
+        largeImage = Image(uiImage: image)
+    }
+}
