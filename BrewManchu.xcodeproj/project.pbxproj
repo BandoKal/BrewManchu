@@ -25,6 +25,7 @@
 		0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536613F22F2074900FE6C22 /* CTAButtonView.swift */; };
 		0536614222F34D6900FE6C22 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536614122F34D6900FE6C22 /* ImageStore.swift */; };
 		0536614422F34FD100FE6C22 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536614322F34FD100FE6C22 /* RowViewModel.swift */; };
+		0536614822F3D8C200FE6C22 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536614722F3D8C200FE6C22 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		0536613F22F2074900FE6C22 /* CTAButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButtonView.swift; sourceTree = "<group>"; };
 		0536614122F34D6900FE6C22 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		0536614322F34FD100FE6C22 /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
+		0536614722F3D8C200FE6C22 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				0536612B22F0879100FE6C22 /* ListViewModel.swift */,
 				0536614322F34FD100FE6C22 /* RowViewModel.swift */,
+				0536614722F3D8C200FE6C22 /* DetailViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				0536614022F2074900FE6C22 /* CTAButtonView.swift in Sources */,
 				0536610E22F0826C00FE6C22 /* ContentView.swift in Sources */,
 				0536613622F1B93900FE6C22 /* BreweryListView.swift in Sources */,
+				0536614822F3D8C200FE6C22 /* DetailViewModel.swift in Sources */,
 				0536614422F34FD100FE6C22 /* RowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
